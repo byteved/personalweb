@@ -12,9 +12,29 @@
   <div class="container">
     <header class="sticky-header">
       <h1>Ved Nakum, the web dev</h1>
-      <button onclick="" class="mode">About Me</button>
-      <button onclick="" class="mode">My Experience</button>
-      <button onclick="" class="mode">Contact</button>
+      <button onclick="toggleDropdown('aboutMe')" class="mode">About Me</button>
+      <div id="aboutMeDropdown" class="dropdown-content">
+  <a href="myhobbys.html">
+    <p>Hobbys</p>
+  </a>
+      </div>
+
+      <button onclick="toggleDropdown('experience')" class="mode">My Experience</button>
+      <div id="experienceDropdown" class="dropdown-content">
+  <!-- Your Experience content goes here -->
+  <a href="myprojects.html">
+    <p>Projects</p>
+  </a>
+      </div>
+
+      <button onclick="toggleDropdown('contact')" class="mode">Contact</button>
+      <div id="contactDropdown" class="dropdown-content">
+  <!-- Your Contact content goes here -->
+    <a href="myemail.html">
+    <p>Email</p>
+  </a>
+      </div>
+
     </header>
     </div>
     <div class="content">
