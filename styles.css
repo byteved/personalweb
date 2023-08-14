@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sticky-header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#stripe {
+  background-color: white;
+  text-align: left;
+  padding: 10px;
+  color: black;
+  position: sticky;
+  top: 60px;
+  z-index: 999;
+}
+
+button {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: black;
+  letter-spacing: 1px;
+  font-size: inherit;
+  transition: all 0.3s;
+  outline: none;
+  margin-left: 10px;
+}
+
+button:hover {
+  color: white;
+  background: black;
+}
+
+.selected {
+  color: white;
+  background: black;
+}
+
+.content {
+  padding: 20px;
+  margin-top: 110px;
+}
