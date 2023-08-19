@@ -16,6 +16,8 @@ window.addEventListener('scroll', function() {
 
 async function loadPage(pageId) {
   const pageContent = document.getElementById('pageContent');
+  const header = document.querySelector('.sticky-header');
+  const headerHeight = header.offsetHeight;
 
   try {
     const response = await fetch(`${pageId}.html`);
