@@ -5,42 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
-  <title>Sticky Header Example</title>
+  <title>Single Page Application Example</title>
 </head>
 <body>
- <div id="stripe">
   <div class="container">
     <header class="sticky-header">
       <h1>Ved Nakum, the web dev</h1>
-      <button onclick="toggleDropdown('aboutMe')" class="mode">About Me</button>
-      <div id="aboutMeDropdown" class="dropdown-content">
-  <a href="myhobbys.html">
-    <p>Hobbys</p>
-  </a>
-      </div>
-
-      <button onclick="toggleDropdown('experience')" class="mode">My Experience</button>
-      <div id="experienceDropdown" class="dropdown-content">
-  <!-- Your Experience content goes here -->
-  <a href="myprojects.html">
-    <p>Projects</p>
-  </a>
-      </div>
-
-      <button onclick="toggleDropdown('contact')" class="mode">Contact</button>
-      <div id="contactDropdown" class="dropdown-content">
-  <!-- Your Contact content goes here -->
-    <a href="myemail.html">
-    <p>Email</p>
-  </a>
-      </div>
-
+      <button onclick="loadPage('aboutMe')" class="mode">About Me</button>
+      <button onclick="loadPage('experience')" class="mode">My Experience</button>
+      <button onclick="loadPage('contact')" class="mode">Contact</button>
     </header>
-    </div>
-    <div class="content">
-      <!-- Your page content goes here -->
-    </div>
+  </div>
+  <div class="content" id="pageContent">
+    <!-- Content will be loaded here -->
   </div>
 </body>
 </html>
-    
