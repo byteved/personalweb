@@ -5,6 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <style>
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+    }
+
+    #popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      z-index: 1001;
+    }
+
+    .blurred {
+      filter: blur(5px);
+    }
+  </style>
   <title>Single Page Application Example</title>
 </head>
 <body>
@@ -19,5 +47,26 @@
   <div class="content" id="pageContent">
     <!-- Content will be loaded here -->
   </div>
+  <div id="overlay"></div>
+  <div id="popup">
+    <p>You are on a mobile device.</p>
+  </div>
+  <script>
+    // Check if the user is on a mobile device
+    function isMobileDevice() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    // Show the popup and overlay if on a mobile device
+    if (isMobileDevice()) {
+      var overlay = document.getElementById('overlay');
+      var popup = document.getElementById('popup');
+      var content = document.getElementById('pageContent');
+
+      overlay.style.display = 'block';
+      popup.style.display = 'block';
+      content.classList.add('blurred');
+    }
+  </script>
 </body>
 </html>
