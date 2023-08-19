@@ -121,3 +121,18 @@ a:hover {
   /* Add any specific styling for links on hover */
   color: red;
 }
+
+   .contact {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .contact a {
+      color: #333;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+
+    .social {
+      font-size: 1.5rem;
+    }
