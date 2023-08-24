@@ -1,1 +1,226 @@
-<h>crazyyy</h>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Experience - [Your Name]</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #1b1b1b, #131313, #1b1b1b);
+    color: #fff;
+    overflow-x: hidden;
+  }
+  .timeline-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    perspective: 800px;
+    overflow: hidden;
+  }
+  .timeline {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+  .event {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: transform 0.5s, background-color 0.5s;
+    cursor: pointer;
+  }
+  .event:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .event-content {
+    width: 80%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateZ(50px);
+  }
+  .event h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .event p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  .event-date {
+    position: absolute;
+    top: 50%;
+    left: -80px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    white-space: nowrap;
+  }
+  .event-visual {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) translateZ(25px);
+    width: 50px;
+    height: 50px;
+    background: #ff6b6b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+    transition: background-color 0.5s;
+  }
+  .event.left .event-visual {
+    background: #6bd4ff;
+  }
+  .experience-section {
+    padding: 40px 0;
+  }
+  .experience-header {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .experience-subtitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .content {
+    text-align: center;
+    padding: 40px 0;
+  }
+  h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  .gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+  .gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s;
+  }
+  .gallery img:hover {
+    transform: scale(1.1);
+  }
+  .social-icons {
+    margin-top: 50px;
+  }
+  .social-icons a {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 24px;
+    color: #fff;
+    transition: transform 0.2s;
+  }
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+</style>
+</head>
+<body>
+<div class="timeline-container">
+  <div class="timeline">
+    <div class="event">
+      <div class="event-visual">HS</div>
+      <div class="event-content">
+        <div class="event-date">2009</div>
+        <h3>High School Graduation</h3>
+        <p>Completed high school and began the journey of higher education.</p>
+      </div>
+    </div>
+    <div class="event left">
+      <div class="event-visual">UNI</div>
+      <div class="event-content">
+        <div class="event-date">2013</div>
+        <h3>University Years</h3>
+        <p>Earned a degree in [Your Major] while exploring various interests.</p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="event-visual">INT</div>
+      <div class="event-content">
+        <div class="event-date">2015</div>
+        <h3>Internship</h3>
+        <p>Started an internship at [Company Name] and gained hands-on experience.</p>
+      </div>
+    </div>
+    <div class="event left">
+      <div class="event-visual">JOB</div>
+      <div class="event-content">
+        <div class="event-date">2017</div>
+        <h3>First Job</h3>
+        <p>Joined [Company Name] as a [Your Position] and contributed to [Achievements].</p>
+      </div>
+    </div>
+    <div class="event">
+      <div class="event-visual">FREE</div>
+      <div class="event-content">
+        <div class="event-date">2020</div>
+        <h3>Freelancing</h3>
+        <p>Ventured into freelancing, collaborating on exciting projects worldwide.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content">
+  <div class="experience-section">
+    <div class="experience-header">Additional Experience</div>
+    <div class="experience-subtitle">Projects, Volunteering, and More</div>
+    <div class="event">
+      <div class="event-visual">PROJ</div>
+      <div class="event-content">
+        <div class="event-date">2021</div>
+        <h3>Passion Projects</h3>
+        <p>Initiated and completed several personal projects showcasing creativity and skills.</p>
+      </div>
+    </div>
+    <div class="event left">
+      <div class="event-visual">VOL</div>
+      <div class="event-content">
+        <div class="event-date">2022</div>
+        <h3>Volunteer Work</h3>
+        <p>Contributed to community initiatives, making a positive impact in various ways.</p>
+      </div>
+    </div>
+    <!-- Add more experience sections here -->
+  </div>
+  <div class="gallery">
+    <img src="image1.jpg" alt="Image 1">
+    <img src="image2.jpg" alt="Image 2">
+    <img src="image3.jpg" alt="Image 3">
+  </div>
+  <div class="social-icons">
+    <a href="https://twitter.com/yourhandle"><i class="fab fa-twitter"></i></a>
+    <a href="https://linkedin.com/in/yourprofile"><i class="fab fa-linkedin"></i></a>
+    <a href="https://instagram.com/yourhandle"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/yourusername"><i class="fab fa-github"></i></a>
+  </div>
+</div>
+</body>
+</html>
